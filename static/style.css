@@ -47,6 +47,16 @@ td {
   text-align: left;
 }
 
+/* Leave space for sort arrows in all headers */
+th {
+  padding-right: 18px;
+}
+
+.datatable-sorter::before,
+.datatable-sorter::after {
+  right: 6px;
+}
+
 th {
   background: #f0f3f6;
   border-bottom: 1px solid #d0d7de;

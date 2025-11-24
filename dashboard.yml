@@ -7,6 +7,15 @@
     - repo: ome/bio-formats-examples
       badges: travis
 
+- name: OME-NGFF repos
+
+  packages:
+    - repo: ome/ngff
+      badges: travis
+
+    - repo: ome/ome-zarr-js
+      badges: travis
+
 - name: OMERO Java packages
 
   packages:

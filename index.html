@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <title>OME Project Dashboard</title>
   <link href="static/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css">
   <link rel="icon" href="favicon.ico">
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
       const generatedAtEl = document.getElementById('generated-at');
       const errorEl = document.getElementById('error');
 
-      const headers = ['Name', 'Created', 'Updated', 'Open issues', 'Size (KB)', 'Last commit', 'Topics'];
+      const headers = ['Name', 'Created', 'Updated', 'Open issues', 'Size', 'Last commit', 'Topics'];
 
       function emptyMarker() {
         const span = document.createElement('span');
@@ -49,9 +51,27 @@
         errorEl.style.display = 'none';
       }
 
-      function createTextCell(value, className) {
+      function formatDateMonth(value) {
+        if (!value) return '';
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return value;
+        return date.toISOString().slice(0, 7);
+      }
+
+      function formatDateDay(value) {
+        if (!value) return '';
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return value;
+        return date.toISOString().slice(0, 10);
+      }
+
+
+      function createTextCell(value, className, sortValue) {
         const td = document.createElement('td');
         if (className) td.className = className;
+        if (sortValue !== undefined && sortValue !== null && sortValue !== '') {
+          td.dataset.order = sortValue;
+        }
         if (value === undefined || value === null || value === '') {
           td.appendChild(emptyMarker());
         } else {
@@ -63,6 +83,20 @@
       function formatNumber(value) {
         const num = Number(value);
         return Number.isFinite(num) ? num.toLocaleString('en-US') : value;
+      }
+
+      function formatSize(sizeKb) {
+        const num = Number(sizeKb);
+        if (!Number.isFinite(num)) return '';
+        const units = ['KB', 'MB', 'GB', 'TB'];
+        let size = num;
+        let unitIndex = 0;
+        while (size >= 1024 && unitIndex < units.length - 1) {
+          size /= 1024;
+          unitIndex += 1;
+        }
+        const precision = size >= 100 ? 0 : size >= 10 ? 1 : 2;
+        return `${size.toFixed(precision)} ${units[unitIndex]}`;
       }
 
       function createNameCell(pkg) {
@@ -88,15 +122,19 @@
           td.appendChild(emptyMarker());
           return td;
         }
+        const sortDate = commit.date ? Date.parse(commit.date) : '';
+        if (!Number.isNaN(sortDate)) {
+          td.dataset.order = sortDate;
+        }
         const dateDiv = document.createElement('div');
         dateDiv.className = 'commit-date';
         if (commit.url) {
           const link = document.createElement('a');
           link.href = commit.url;
-          link.textContent = commit.date || 'commit';
+          link.textContent = formatDateDay(commit.date) || 'commit';
           dateDiv.appendChild(link);
         } else {
-          dateDiv.textContent = commit.date || 'commit';
+          dateDiv.textContent = formatDateDay(commit.date) || 'commit';
         }
         const authorDiv = document.createElement('div');
         authorDiv.className = 'commit-actor';
@@ -133,10 +171,10 @@
         const repoInfo = pkg.repo_info || {};
         const tr = document.createElement('tr');
         tr.appendChild(createNameCell(pkg));
-        tr.appendChild(createTextCell(repoInfo.created_at, 'meta-cell'));
-        tr.appendChild(createTextCell(repoInfo.updated_at, 'meta-cell'));
-        tr.appendChild(createTextCell(repoInfo.open_issues, 'meta-cell'));
-        tr.appendChild(createTextCell(formatNumber(repoInfo.size), 'meta-cell'));
+        tr.appendChild(createTextCell(formatDateMonth(repoInfo.created_at), 'meta-cell', Date.parse(repoInfo.created_at || '')));
+        tr.appendChild(createTextCell(formatDateMonth(repoInfo.updated_at), 'meta-cell', Date.parse(repoInfo.updated_at || '')));
+        tr.appendChild(createTextCell(repoInfo.open_issues, 'meta-cell', Number(repoInfo.open_issues)));
+        tr.appendChild(createTextCell(formatSize(repoInfo.size), 'meta-cell', Number(repoInfo.size)));
         tr.appendChild(createLastCommitCell(pkg.last_commit));
         tr.appendChild(createTopicsCell(repoInfo.topics));
         return tr;
@@ -168,6 +206,21 @@
         generatedAtEl.textContent = data.generated_at ? 'Generated at ' + data.generated_at : '';
         (data.sections || []).forEach(section => {
           sectionsEl.appendChild(buildSection(section));
+        });
+        enhanceTables();
+      }
+
+      function enhanceTables() {
+        if (!window.simpleDatatables || !simpleDatatables.DataTable) return;
+        document.querySelectorAll('.repo-table').forEach(table => {
+          if (table.dataset.enhanced === '1') return;
+          new simpleDatatables.DataTable(table, {
+            searchable: false,
+            perPageSelect: false,
+            perPage: 50,
+            paging: false,
+          });
+          table.dataset.enhanced = '1';
         });
       }
 
