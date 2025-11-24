@@ -1,8 +1,8 @@
 # /// script
-# requires-python = ">=3.13"
+# requires-python = ">=3.12"
 # dependencies = [
 #     "pyyaml",
-#     "requests",
+#     "requests"
 # ]
 # ///
 import os

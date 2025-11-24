@@ -27,7 +27,7 @@ jobs:
       - name: Generate status page
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run python make_status.py
+        run: uv run make_status.py
 
       - name: Commit and push if changed
         run: |
