@@ -29,7 +29,6 @@
     - repo: ome/omero-model
     - repo: ome/omero-common
     - repo: ome/omero-romio
-    - repo: ome/omero-rendering
     - repo: ome/omero-server
     - repo: ome/omero-blitz
     - repo: ome/omero-insight
@@ -51,11 +50,11 @@
     - repo: German-BioImaging/omero-rdf
     - repo: joshmoore/ome-ld
 
-- name: Training packages
+- name: Training packages and documentation
 
   packages:
     - repo: ome/omero-guides
-    - repo: ome/omero-guides-cellprofiler
+    - repo: ome/status
 
 - name: Ansible, Docker and examples
 

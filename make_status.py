@@ -80,6 +80,7 @@ def fetch_repo_info(owner: str, repo: str, session: requests.Session) -> Optiona
         "created_at": info.get("created_at"),
         "updated_at": info.get("updated_at"),
         "open_issues": info.get("open_issues_count"),
+        "stargazers_count": info.get("stargazers_count"),
         "description": info.get("description"),
         "topics": info.get("topics", []),
         "size": info.get("size"),

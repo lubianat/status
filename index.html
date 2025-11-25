@@ -38,7 +38,16 @@
       const errorEl = document.getElementById('error');
       let logos = {};
 
-      const headers = ['Owner', 'Name', 'Issues/PRs', 'Created', 'Last commit', 'Last release', 'Topics'];
+      const headers = [
+        { text: 'Owner' },
+        { text: 'Name' },
+        { text: '⭐', title: 'Stargazers' },
+        { text: '📬', title: 'Open issues + PRs' },
+        { text: '🚀', title: 'Created' },
+        { text: '📝', title: 'Last commit' },
+        { text: '📦', title: 'Last release' },
+        { text: '🏷️', title: 'Topics' },
+      ];
 
       function emptyMarker() {
         const span = document.createElement('span');
@@ -247,9 +256,13 @@
       function buildHeader() {
         const thead = document.createElement('thead');
         const row = document.createElement('tr');
-        headers.forEach(text => {
+        headers.forEach(header => {
           const th = document.createElement('th');
-          th.textContent = text;
+          const label = typeof header === 'string' ? header : header.text;
+          th.textContent = label;
+          if (header && typeof header === 'object' && header.title) {
+            th.title = header.title;
+          }
           row.appendChild(th);
         });
         thead.appendChild(row);
@@ -261,6 +274,7 @@
         const tr = document.createElement('tr');
         tr.appendChild(createOwnerCell(pkg));
         tr.appendChild(createNameCell(pkg));
+        tr.appendChild(createTextCell(formatNumber(repoInfo.stargazers_count), 'meta-cell', Number(repoInfo.stargazers_count)));
         tr.appendChild(createTextCell(repoInfo.open_issues, 'meta-cell', Number(repoInfo.open_issues)));
         tr.appendChild(createTextCell(formatYear(repoInfo.created_at), 'meta-cell', Date.parse(repoInfo.created_at || '')));
         tr.appendChild(createLastCommitCell(pkg.last_commit));

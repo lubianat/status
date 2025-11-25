@@ -1,4 +1,4 @@
-generated_at: '2025-11-25T12:34:18.495726Z'
+generated_at: '2025-11-25T12:41:14.193791Z'
 sections:
 - name: Bio-Formats packages
   packages:
@@ -21,6 +21,7 @@ sections:
         (GPL); commercial licenses are available from  Glencoe Software. '
       open_issues: 174
       size: 280191
+      stargazers_count: 406
       topics:
       - bio-formats
       - format-converter
@@ -46,6 +47,7 @@ sections:
       description: Examples of usage of the Bio-Formats API
       open_issues: 0
       size: 406
+      stargazers_count: 13
       topics:
       - api
       - bio-formats
@@ -72,6 +74,7 @@ sections:
         data in the cloud.
       open_issues: 136
       size: 14215
+      stargazers_count: 142
       topics:
       - bioimaging
       - cloud
@@ -91,6 +94,7 @@ sections:
       description: Some JavaScript utils for simple rendering of OME-Zarr images
       open_issues: 8
       size: 1930
+      stargazers_count: 4
       topics: []
       updated_at: '2025-11-24T09:17:35Z'
     user: BioNGFF
@@ -109,6 +113,7 @@ sections:
       description: null
       open_issues: 30
       size: 427
+      stargazers_count: 18
       topics:
       - ngff
       - ome-zarr-converter
@@ -132,6 +137,7 @@ sections:
         for storing bioimaging data in the cloud.
       open_issues: 87
       size: 1045
+      stargazers_count: 217
       topics:
       - ngff
       - ome
@@ -150,6 +156,7 @@ sections:
       description: OMERO Zarr Pixel Buffer Implementation
       open_issues: 4
       size: 421
+      stargazers_count: 0
       topics: []
       updated_at: '2025-11-17T14:53:49Z'
     user: ome
@@ -168,6 +175,7 @@ sections:
       description: OMERO Zarr Pixel Buffer Implementation
       open_issues: 4
       size: 379
+      stargazers_count: 2
       topics: []
       updated_at: '2025-11-06T17:52:45Z'
     user: glencoesoftware
@@ -186,6 +194,7 @@ sections:
       description: Web page for validating OME-NGFF files
       open_issues: 13
       size: 1843
+      stargazers_count: 10
       topics:
       - ome-zarr
       updated_at: '2025-11-17T14:20:41Z'
@@ -206,6 +215,7 @@ sections:
         to generate 1 PB of OME-Zarr data
       open_issues: 15
       size: 1373
+      stargazers_count: 20
       topics:
       - ome-ngff
       - ome-zarr-converter
@@ -223,6 +233,7 @@ sections:
         format
       open_issues: 12
       size: 85
+      stargazers_count: 3
       topics:
       - ngff
       - ome-zarr
@@ -243,6 +254,7 @@ sections:
       description: A napari plugin for zarr backed OME-NGFF images
       open_issues: 34
       size: 154
+      stargazers_count: 42
       topics:
       - napari-plugin
       - ngff
@@ -266,6 +278,7 @@ sections:
         File Format (NGFF) Zarr implementation.
       open_issues: 29
       size: 8258
+      stargazers_count: 55
       topics:
       - dask
       - imaging
@@ -292,6 +305,7 @@ sections:
         workflows.
       open_issues: 12
       size: 44713
+      stargazers_count: 30
       topics:
       - ome-ngff
       - ome-zarr
@@ -320,6 +334,7 @@ sections:
         2000.
       open_issues: 30
       size: 1985501
+      stargazers_count: 214
       topics:
       - database
       - image
@@ -344,6 +359,7 @@ sections:
       description: Gradle project for generating model jar for OMERO
       open_issues: 9
       size: 7061
+      stargazers_count: 0
       topics:
       - component
       - gradle
@@ -368,6 +384,7 @@ sections:
       description: Gradle project containing common utilities for OMERO
       open_issues: 5
       size: 1888
+      stargazers_count: 1
       topics:
       - library
       - omero
@@ -389,16 +406,13 @@ sections:
       description: Gradle project for the ROMIO library of OMERO
       open_issues: 4
       size: 660
+      stargazers_count: 0
       topics:
       - io
       - jar
       - library
       - omero
       updated_at: '2025-08-06T08:36:33Z'
-    user: ome
-  - error: true
-    name: omero-rendering
-    repo: ome/omero-rendering
     user: ome
   - last_commit:
       author: sbesson
@@ -415,6 +429,7 @@ sections:
       description: Gradle project containing main server logic for OMERO
       open_issues: 40
       size: 6085
+      stargazers_count: 7
       topics:
       - component
       - jar
@@ -438,6 +453,7 @@ sections:
       description: Gradle project containing Ice remoting code for OMERO
       open_issues: 32
       size: 9335
+      stargazers_count: 0
       topics:
       - component
       - jar
@@ -461,6 +477,7 @@ sections:
       description: Gradle project containing insight java client for OMERO
       open_issues: 124
       size: 24869
+      stargazers_count: 8
       topics:
       - client
       - gui
@@ -485,6 +502,7 @@ sections:
       description: Python project containing Ice remoting code for OMERO
       open_issues: 71
       size: 11975
+      stargazers_count: 27
       topics:
       - component
       - lib
@@ -508,6 +526,7 @@ sections:
       description: Django-based OMERO.web client
       open_issues: 151
       size: 26444
+      stargazers_count: 22
       topics:
       - client
       - django
@@ -527,6 +546,7 @@ sections:
       description: OMERO.dropbox server for watching directories
       open_issues: 5
       size: 465
+      stargazers_count: 2
       topics:
       - component
       - lib
@@ -546,6 +566,7 @@ sections:
       description: OMERO marshalling infrastructure
       open_issues: 9
       size: 404
+      stargazers_count: 5
       topics:
       - marshalling
       - model
@@ -564,6 +585,7 @@ sections:
       description: OMERO command-line tool for rendering
       open_issues: 12
       size: 429
+      stargazers_count: 2
       topics:
       - cli
       - command
@@ -587,6 +609,7 @@ sections:
       description: An OMERO.web app for creating Figures from images in OMERO
       open_issues: 73
       size: 8879
+      stargazers_count: 19
       topics:
       - omero
       - webapp
@@ -608,6 +631,7 @@ sections:
         interacts with OMERO.
       open_issues: 5
       size: 1599
+      stargazers_count: 46
       topics:
       - imaging-solutions
       - omero
@@ -633,6 +657,7 @@ sections:
       description: A plugin for exporting RDF from OMERO
       open_issues: 29
       size: 99
+      stargazers_count: 15
       topics:
       - nfdi4bioimage
       updated_at: '2025-10-24T07:07:09Z'
@@ -648,11 +673,12 @@ sections:
       description: Linked Data support for the OME Model
       open_issues: 7
       size: 40
+      stargazers_count: 2
       topics:
       - nfdi4bioimage
       updated_at: '2025-09-18T16:07:27Z'
     user: joshmoore
-- name: Training packages
+- name: Training packages and documentation
   packages:
   - last_commit:
       author: dependabot[bot]
@@ -665,6 +691,7 @@ sections:
       description: Guides for using OMERO
       open_issues: 17
       size: 996
+      stargazers_count: 1
       topics:
       - docs
       - guides
@@ -674,9 +701,24 @@ sections:
       - omero-training
       updated_at: '2024-12-17T13:42:35Z'
     user: ome
-  - error: true
-    name: omero-guides-cellprofiler
-    repo: ome/omero-guides-cellprofiler
+  - last_commit:
+      author: joshmoore
+      date: '2019-08-22'
+      url: https://github.com/ome/status/commit/9fb1d535d67d52ed47f35a8928f3149266ed2264
+    name: status
+    repo: ome/status
+    repo_info:
+      created_at: '2019-08-22T12:20:48Z'
+      description: Status dashboard for the OME project
+      open_issues: 2
+      size: 122
+      stargazers_count: 1
+      topics:
+      - dashboard
+      - gh-pages
+      - ome
+      - status
+      updated_at: '2025-09-29T08:10:25Z'
     user: ome
 - name: Ansible, Docker and examples
   packages:
@@ -691,6 +733,7 @@ sections:
       description: Installs and configures OMERO.server
       open_issues: 10
       size: 318
+      stargazers_count: 4
       topics:
       - ansible
       - omero
@@ -709,6 +752,7 @@ sections:
       description: Installs and configures OMERO.web and Nginx
       open_issues: 4
       size: 199
+      stargazers_count: 1
       topics:
       - ansible
       - ome
@@ -727,6 +771,7 @@ sections:
       description: Examples playbooks for installing OMERO with Ansible and Docker
       open_issues: 5
       size: 351
+      stargazers_count: 11
       topics:
       - ansible
       - compose
@@ -747,6 +792,7 @@ sections:
       description: OMERO.web production docker image
       open_issues: 20
       size: 139
+      stargazers_count: 7
       topics:
       - docker
       - ome
