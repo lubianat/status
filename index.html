@@ -15,6 +15,11 @@
   <div id="wrapper">
     <h1>OME Project Dashboard</h1>
     <p class="subtitle">Daily snapshot of core repositories with quick metadata.</p>
+    <p class="subtitle">OME-owned and OME-related projects.</p>
+
+    <p class="subtitle">For workflows, see the <a
+        href="https://github.com/ome/ome-resources-monitor/blob/main/logs/latest.md"
+        target="_blank">ome-resource-monitor</a>.</p>
     <p id="generated-at" class="meta-cell"></p>
     <div id="error" class="error-note" style="display:none;"></div>
     <div id="sections">
@@ -32,7 +37,7 @@
       const generatedAtEl = document.getElementById('generated-at');
       const errorEl = document.getElementById('error');
 
-      const headers = ['Name', 'Created', 'Updated', 'Issues/PRs', 'Size', 'Last commit', 'Topics'];
+      const headers = ['Owner', 'Name', 'Created', 'Updated', 'Issues/PRs', 'Size', 'Last commit', 'Topics'];
 
       function emptyMarker() {
         const span = document.createElement('span');
@@ -114,6 +119,21 @@
         return td;
       }
 
+      function createOwnerCell(pkg) {
+        const td = document.createElement('td');
+        td.style.textAlign = 'left';
+        const owner = pkg.user;
+        if (!owner) {
+          td.appendChild(emptyMarker());
+          return td;
+        }
+        const link = document.createElement('a');
+        link.href = 'https://github.com/' + owner;
+        link.textContent = owner;
+        td.appendChild(link);
+        return td;
+      }
+
       function createLastCommitCell(commit) {
         const td = document.createElement('td');
         td.className = 'commit-cell';
@@ -170,6 +190,7 @@
       function buildRow(pkg) {
         const repoInfo = pkg.repo_info || {};
         const tr = document.createElement('tr');
+        tr.appendChild(createOwnerCell(pkg));
         tr.appendChild(createNameCell(pkg));
         tr.appendChild(createTextCell(formatDateMonth(repoInfo.created_at), 'meta-cell', Date.parse(repoInfo.created_at || '')));
         tr.appendChild(createTextCell(formatDateMonth(repoInfo.updated_at), 'meta-cell', Date.parse(repoInfo.updated_at || '')));
