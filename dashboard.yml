@@ -2,10 +2,7 @@
 
   packages:
     - repo: ome/bioformats
-      badges: travis
-
     - repo: ome/bio-formats-examples
-      badges: travis
 
 - name: OME-NGFF
 

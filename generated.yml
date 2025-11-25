@@ -1,9 +1,8 @@
-generated_at: '2025-11-25T13:16:38.457463Z'
+generated_at: '2025-11-25T15:54:31.375544Z'
 sections:
 - name: Bio-Formats packages
   packages:
-  - badges: travis
-    last_commit:
+  - last_commit:
       author: sbesson
       date: '2025-11-21'
       url: https://github.com/ome/bioformats/commit/f2e491124006b64d53a5978e0f6284ae37f961c8
@@ -35,8 +34,7 @@ sections:
       - wsi
       updated_at: '2025-11-21T14:34:14Z'
     user: ome
-  - badges: travis
-    last_commit:
+  - last_commit:
       author: sbesson
       date: '2025-11-25'
       url: https://github.com/ome/bio-formats-examples/commit/1e4408bdccf1da4506d2b060010d134094d86dde
@@ -60,8 +58,8 @@ sections:
   packages:
   - last_commit:
       author: joshmoore
-      date: '2025-11-20'
-      url: https://github.com/ome/ngff/commit/e5b2f2e9e43cd5ddf9c5adc7e70216ea1f255a3e
+      date: '2025-11-25'
+      url: https://github.com/ome/ngff/commit/60fc8e4b8dbd75d9e5e53799199b6e8301f964a2
     last_release:
       date: '2025-01-28'
       tag_name: 0.5.2
@@ -72,7 +70,7 @@ sections:
       created_at: '2020-11-17T14:55:39Z'
       description: Next-generation file format (NGFF) specifications for storing bioimaging
         data in the cloud.
-      open_issues: 136
+      open_issues: 135
       size: 14215
       stargazers_count: 142
       topics:
@@ -81,7 +79,7 @@ sections:
       - data-science
       - file-formats
       - spec
-      updated_at: '2025-11-20T08:27:39Z'
+      updated_at: '2025-11-25T15:27:04Z'
     user: ome
   - last_commit:
       author: will-moore
@@ -291,26 +289,50 @@ sections:
     user: fideus-labs
   - last_commit:
       author: lorenzocerrone
-      date: '2025-11-22'
-      url: https://github.com/BioVisionCenter/ngio/commit/218f0462d6215b86925945997296e5c184f563a5
+      date: '2025-11-25'
+      url: https://github.com/BioVisionCenter/ngio/commit/ec3418565419629b26b0d51974d16b5ee5a16503
     last_release:
-      date: '2025-11-18'
-      tag_name: v0.4.5
-      url: https://github.com/BioVisionCenter/ngio/releases/tag/v0.4.5
+      date: '2025-11-25'
+      tag_name: v0.4.6
+      url: https://github.com/BioVisionCenter/ngio/releases/tag/v0.4.6
     name: ngio
     repo: BioVisionCenter/ngio
     repo_info:
       created_at: '2024-07-08T08:18:08Z'
       description: Ngio is a Python library to streamline OME-Zarr image analysis
         workflows.
-      open_issues: 12
-      size: 44713
+      open_issues: 10
+      size: 44714
       stargazers_count: 30
       topics:
       - ome-ngff
       - ome-zarr
-      updated_at: '2025-11-22T07:58:43Z'
+      updated_at: '2025-11-25T15:10:16Z'
     user: BioVisionCenter
+  - last_commit:
+      author: LDeakin
+      date: '2025-10-27'
+      url: https://github.com/zarrs/ome_zarr_metadata/commit/a11f8bd7ed059004643606857059e1651aac2353
+    last_release:
+      date: '2025-08-29'
+      tag_name: v0.2.5
+      url: https://github.com/zarrs/ome_zarr_metadata/releases/tag/v0.2.5
+    name: ome_zarr_metadata
+    repo: zarrs/ome_zarr_metadata
+    repo_info:
+      created_at: '2024-07-22T22:01:37Z'
+      description: A Rust library for OME-Zarr (previously OME-NGFF) metadata
+      open_issues: 4
+      size: 87
+      stargazers_count: 6
+      topics:
+      - ome
+      - ome-ngff
+      - ome-zarr
+      - rust
+      - zarr
+      updated_at: '2025-11-25T15:09:01Z'
+    user: zarrs
 - name: OMERO Java packages
   packages:
   - last_commit:
@@ -332,7 +354,7 @@ sections:
         strong links to the microscopy community. Funded by private and public research
         grants, OME has been a major force on the international microscopy stage since
         2000.
-      open_issues: 30
+      open_issues: 29
       size: 1985501
       stargazers_count: 214
       topics:
@@ -500,7 +522,7 @@ sections:
     repo_info:
       created_at: '2019-08-05T15:04:56Z'
       description: Python project containing Ice remoting code for OMERO
-      open_issues: 71
+      open_issues: 70
       size: 11975
       stargazers_count: 27
       topics:
@@ -524,7 +546,7 @@ sections:
     repo_info:
       created_at: '2019-08-05T15:05:08Z'
       description: Django-based OMERO.web client
-      open_issues: 151
+      open_issues: 149
       size: 26444
       stargazers_count: 22
       topics:
@@ -537,14 +559,14 @@ sections:
     user: ome
   - last_commit:
       author: sbesson
-      date: '2024-11-21'
-      url: https://github.com/ome/omero-dropbox/commit/01fa0c567e5391e5f920bd17d6e9eab210c9df67
+      date: '2025-11-25'
+      url: https://github.com/ome/omero-dropbox/commit/ac93ed4b4a139dd73b414ead55223071fc465de5
     name: omero-dropbox
     repo: ome/omero-dropbox
     repo_info:
       created_at: '2019-08-05T15:05:22Z'
       description: OMERO.dropbox server for watching directories
-      open_issues: 5
+      open_issues: 4
       size: 465
       stargazers_count: 2
       topics:
@@ -553,7 +575,7 @@ sections:
       - omero
       - omero-import
       - python
-      updated_at: '2025-08-27T12:20:51Z'
+      updated_at: '2025-11-25T15:02:46Z'
     user: ome
   - last_commit:
       author: sbesson
@@ -616,9 +638,9 @@ sections:
       updated_at: '2025-11-25T11:20:35Z'
     user: ome
   - last_commit:
-      author: jburel
-      date: '2025-09-09'
-      url: https://github.com/ome/omero-scripts/commit/03b9116196e1a799dd18a666559613d912be01a5
+      author: sbesson
+      date: '2025-11-25'
+      url: https://github.com/ome/omero-scripts/commit/87f4052bba3595bd6cd64d41866501d84d2814fb
     last_release:
       date: '2025-06-16'
       tag_name: v5.9.1
@@ -628,14 +650,14 @@ sections:
     repo_info:
       created_at: '2012-07-02T22:16:36Z'
       description: Core OMERO Scripts
-      open_issues: 24
+      open_issues: 20
       size: 1920
       stargazers_count: 15
       topics:
       - omero
       - python
       - scripts
-      updated_at: '2025-09-10T15:37:17Z'
+      updated_at: '2025-11-25T15:51:23Z'
     user: ome
   - last_commit:
       author: erickmartins
