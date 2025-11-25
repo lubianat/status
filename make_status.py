@@ -2,7 +2,8 @@
 # requires-python = ">=3.12"
 # dependencies = [
 #     "pyyaml",
-#     "requests"
+#     "requests",
+#     "tqdm"
 # ]
 # ///
 
@@ -78,6 +79,31 @@ def fetch_repo_info(owner: str, repo: str, session: requests.Session) -> Optiona
     }
 
 
+def fetch_last_release_info(
+    owner: str, repo: str, session: requests.Session
+) -> Optional[dict]:
+    """
+    Fetch latest release from the GitHub API.
+    """
+    releases_resp = session.get(
+        f"https://api.github.com/repos/{owner}/{repo}/releases", params={"per_page": 1}
+    )
+    if releases_resp.status_code == 404:
+        return None
+
+    releases = releases_resp.json()
+    if not releases:
+        return None
+
+    last_release = releases[0]
+    published_at = last_release.get("published_at") or last_release.get("created_at")
+    return {
+        "url": last_release.get("html_url"),
+        "tag_name": last_release.get("tag_name"),
+        "date": format_date(published_at) if published_at else None,
+    }
+
+
 for section in config:
     for package in tqdm(section["packages"]):
         package["user"], package["name"] = package["repo"].split("/")
@@ -93,6 +119,12 @@ for section in config:
         )
         if last_commit_info:
             package["last_commit"] = last_commit_info
+
+        last_release_info = fetch_last_release_info(
+            package["user"], package["name"], session
+        )
+        if last_release_info:
+            package["last_release"] = last_release_info
 
 snapshot = {
     "generated_at": datetime.utcnow().isoformat() + "Z",
