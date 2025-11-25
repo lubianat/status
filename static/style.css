@@ -89,6 +89,26 @@ a:hover {
   font-weight: 600;
 }
 
+.commit-date a {
+  color: inherit;
+}
+
+.commit-date.commit-fresh {
+  color: #1f883d;
+}
+
+.commit-date.commit-recent {
+  color: #7a9e1d;
+}
+
+.commit-date.commit-stale {
+  color: #c69026;
+}
+
+.commit-date.commit-old {
+  color: #d1242f;
+}
+
 .commit-actor {
   color: #57606a;
   font-size: 0.95em;

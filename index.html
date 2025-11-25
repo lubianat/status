@@ -129,7 +129,24 @@
         }
         const link = document.createElement('a');
         link.href = 'https://github.com/' + owner;
-        link.textContent = owner;
+        const ownerKey = (owner && owner.toLowerCase) ? owner.toLowerCase() : owner;
+        if (ownerKey === 'ome') {
+          const img = document.createElement('img');
+          img.alt = 'OME';
+          img.src = 'https://raw.githubusercontent.com/sbesson/artwork/main/ome/ome-main-nav.svg';
+          img.style.height = '1em';
+          img.style.verticalAlign = 'bottom';
+          link.appendChild(img);
+        } else if (ownerKey === 'german-bioimaging') {
+          const img = document.createElement('img');
+          img.alt = 'German BioImaging';
+          img.src = 'https://gerbi-gmb.de/wp-content/uploads/2021/06/GerBI_Logo_396px-200x65.png.pagespeed.ce.DogekpsSOi.png';
+          img.style.height = '1.1em';
+          img.style.verticalAlign = 'bottom';
+          link.appendChild(img);
+        } else {
+          link.textContent = owner;
+        }
         td.appendChild(link);
         return td;
       }
@@ -146,8 +163,12 @@
         if (!Number.isNaN(sortDate)) {
           td.dataset.order = sortDate;
         }
+        const dateClass = classifyCommitAge(commit.date);
         const dateDiv = document.createElement('div');
         dateDiv.className = 'commit-date';
+        if (dateClass) {
+          dateDiv.classList.add(dateClass);
+        }
         if (commit.url) {
           const link = document.createElement('a');
           link.href = commit.url;
@@ -261,6 +282,18 @@
           sectionsEl.innerHTML = '';
           setError('Could not load dashboard data: ' + err.message);
         }
+      }
+
+      function classifyCommitAge(dateStr) {
+        if (!dateStr) return '';
+        const parsed = Date.parse(dateStr);
+        if (Number.isNaN(parsed)) return '';
+        const now = Date.now();
+        const diffDays = (now - parsed) / (1000 * 60 * 60 * 24);
+        if (diffDays <= 7) return 'commit-fresh';
+        if (diffDays <= 30) return 'commit-recent';
+        if (diffDays <= 365) return 'commit-stale';
+        return 'commit-old';
       }
 
       loadDashboard();
