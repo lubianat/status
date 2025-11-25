@@ -22,6 +22,8 @@
     - repo: ome/napari-ome-zarr
     - repo: fideus-labs/ngff-zarr
     - repo: BioVisionCenter/ngio
+    - repo: zarrs/ome_zarr_metadata
+
 - name: OMERO Java packages
 
   packages:
