@@ -1,10 +1,12 @@
-generated_at: '2025-12-01T12:04:09.811512Z'
+generated_at: '2025-12-01T12:40:10.333065Z'
 sections:
 - name: Bio-Formats packages
   packages:
   - last_commit:
       author: sbesson
       date: '2025-11-21'
+      sha: f2e491124006b64d53a5978e0f6284ae37f961c8
+      status: SUCCESS
       url: https://github.com/ome/bioformats/commit/f2e491124006b64d53a5978e0f6284ae37f961c8
     last_release:
       date: '2025-08-05'
@@ -37,6 +39,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-11-25'
+      sha: 1e4408bdccf1da4506d2b060010d134094d86dde
+      status: SUCCESS
       url: https://github.com/ome/bio-formats-examples/commit/1e4408bdccf1da4506d2b060010d134094d86dde
     name: bio-formats-examples
     repo: ome/bio-formats-examples
@@ -59,6 +63,8 @@ sections:
   - last_commit:
       author: joshmoore
       date: '2025-11-25'
+      sha: 60fc8e4b8dbd75d9e5e53799199b6e8301f964a2
+      status: SUCCESS
       url: https://github.com/ome/ngff/commit/60fc8e4b8dbd75d9e5e53799199b6e8301f964a2
     last_release:
       date: '2025-01-28'
@@ -84,6 +90,8 @@ sections:
   - last_commit:
       author: will-moore
       date: '2025-11-24'
+      sha: 32050e65289e98b4a8af9a0ccf8226ff95467e8a
+      status: SUCCESS
       url: https://github.com/BioNGFF/ome-zarr.js/commit/32050e65289e98b4a8af9a0ccf8226ff95467e8a
     name: ome-zarr.js
     repo: BioNGFF/ome-zarr.js
@@ -99,6 +107,8 @@ sections:
   - last_commit:
       author: will-moore
       date: '2025-09-17'
+      sha: 37ea7000309b4f8b87c5122c138fb59b17ecf86b
+      status: SUCCESS
       url: https://github.com/ome/omero-cli-zarr/commit/37ea7000309b4f8b87c5122c138fb59b17ecf86b
     last_release:
       date: '2025-06-06'
@@ -122,6 +132,8 @@ sections:
   - last_commit:
       author: will-moore
       date: '2025-11-28'
+      sha: 88fca830c1c6145fd8e85ccc939ce13b884207a8
+      status: FAILURE
       url: https://github.com/ome/ome-zarr-py/commit/88fca830c1c6145fd8e85ccc939ce13b884207a8
     last_release:
       date: '2025-08-22'
@@ -146,6 +158,8 @@ sections:
   - last_commit:
       author: dominikl
       date: '2025-11-17'
+      sha: 36ffdad6f2b1d42d45f210dba3f84320447fc2c4
+      status: SUCCESS
       url: https://github.com/ome/omero-zarr-pixel-buffer/commit/36ffdad6f2b1d42d45f210dba3f84320447fc2c4
     name: omero-zarr-pixel-buffer
     repo: ome/omero-zarr-pixel-buffer
@@ -161,6 +175,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-10-29'
+      sha: 044d439d22e725f8f25237b7820354824e8ff2f8
+      status: SUCCESS
       url: https://github.com/glencoesoftware/omero-zarr-pixel-buffer/commit/044d439d22e725f8f25237b7820354824e8ff2f8
     last_release:
       date: '2025-10-29'
@@ -180,6 +196,8 @@ sections:
   - last_commit:
       author: will-moore
       date: '2025-11-17'
+      sha: 01ca6c8dae499914114acd136353ac452f93bce4
+      status: SUCCESS
       url: https://github.com/ome/ome-ngff-validator/commit/01ca6c8dae499914114acd136353ac452f93bce4
     last_release:
       date: '2025-09-05'
@@ -200,6 +218,8 @@ sections:
   - last_commit:
       author: joshmoore
       date: '2025-10-01'
+      sha: 91d0cd7c62e7dbf9782cc09b3970ab59cdecc8df
+      status: FAILURE
       url: https://github.com/ome/ome2024-ngff-challenge/commit/91d0cd7c62e7dbf9782cc09b3970ab59cdecc8df
     last_release:
       date: '2025-04-15'
@@ -222,6 +242,8 @@ sections:
   - last_commit:
       author: will-moore
       date: '2025-07-15'
+      sha: 5e9b09130ca04575ea2c2aa1abdbcb771b8d5128
+      status: SUCCESS
       url: https://github.com/ome/ome-ngff-tools/commit/5e9b09130ca04575ea2c2aa1abdbcb771b8d5128
     name: ome-ngff-tools
     repo: ome/ome-ngff-tools
@@ -240,6 +262,8 @@ sections:
   - last_commit:
       author: joshmoore
       date: '2025-09-02'
+      sha: 82760e6788a9abb02f074919a095acad7bcee318
+      status: SUCCESS
       url: https://github.com/ome/napari-ome-zarr/commit/82760e6788a9abb02f074919a095acad7bcee318
     last_release:
       date: '2024-07-15'
@@ -263,6 +287,8 @@ sections:
   - last_commit:
       author: thewtex
       date: '2025-11-25'
+      sha: c4ae5bb194f8765973c2632c750ebe68c0665a2c
+      status: FAILURE
       url: https://github.com/fideus-labs/ngff-zarr/commit/c4ae5bb194f8765973c2632c750ebe68c0665a2c
     last_release:
       date: '2025-11-24'
@@ -290,6 +316,8 @@ sections:
   - last_commit:
       author: lorenzocerrone
       date: '2025-11-25'
+      sha: ec3418565419629b26b0d51974d16b5ee5a16503
+      status: SUCCESS
       url: https://github.com/BioVisionCenter/ngio/commit/ec3418565419629b26b0d51974d16b5ee5a16503
     last_release:
       date: '2025-11-25'
@@ -312,6 +340,8 @@ sections:
   - last_commit:
       author: LDeakin
       date: '2025-11-25'
+      sha: d83d1dbd3c3c1af0dd12e4eb83cae1e20ba9c05e
+      status: SUCCESS
       url: https://github.com/zarrs/ome_zarr_metadata/commit/d83d1dbd3c3c1af0dd12e4eb83cae1e20ba9c05e
     last_release:
       date: '2025-08-29'
@@ -336,6 +366,8 @@ sections:
   - last_commit:
       author: dstansby
       date: '2025-10-08'
+      sha: 1ee2c91f1128e2b573e2ad2222ac21b0f4c9f3d3
+      status: SUCCESS
       url: https://github.com/ome-zarr-models/ome-zarr-models-py/commit/1ee2c91f1128e2b573e2ad2222ac21b0f4c9f3d3
     last_release:
       date: '2025-09-30'
@@ -360,6 +392,8 @@ sections:
   - last_commit:
       author: thewtex
       date: '2025-11-13'
+      sha: 6217a331d3e0897dcb1d857086f68a6ab2a50f72
+      status: FAILURE
       url: https://github.com/spatial-image/multiscale-spatial-image/commit/6217a331d3e0897dcb1d857086f68a6ab2a50f72
     last_release:
       date: '2025-11-13'
@@ -389,6 +423,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-11-25'
+      sha: 0763546fbc345dbc1bbcf1995bd9d631f5ba1567
+      status: SUCCESS
       url: https://github.com/ome/openmicroscopy/commit/0763546fbc345dbc1bbcf1995bd9d631f5ba1567
     last_release:
       date: '2025-06-26'
@@ -420,6 +456,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-10-28'
+      sha: f544fae8f9ab0cdadecef3173e7d55d96a87fae7
+      status: null
       url: https://github.com/ome/omero-model/commit/f544fae8f9ab0cdadecef3173e7d55d96a87fae7
     last_release:
       date: '2025-06-03'
@@ -445,6 +483,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-06-04'
+      sha: 540d520c0d291cdec3dc140b69a77fba2ccbed64
+      status: SUCCESS
       url: https://github.com/ome/omero-common/commit/540d520c0d291cdec3dc140b69a77fba2ccbed64
     last_release:
       date: '2025-06-04'
@@ -467,6 +507,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-08-06'
+      sha: 33c24b311d5b4cb8cd8f64af7e509636c4bdb433
+      status: FAILURE
       url: https://github.com/ome/omero-romio/commit/33c24b311d5b4cb8cd8f64af7e509636c4bdb433
     last_release:
       date: '2025-06-04'
@@ -490,6 +532,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-06-10'
+      sha: e594cc1fccbdaffe1c51566d8c5b1d4d4da49d69
+      status: SUCCESS
       url: https://github.com/ome/omero-server/commit/e594cc1fccbdaffe1c51566d8c5b1d4d4da49d69
     last_release:
       date: '2025-06-10'
@@ -514,6 +558,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-11-19'
+      sha: f2d20e7eab6c43b1997b6fa533a1b0d3f03fea63
+      status: null
       url: https://github.com/ome/omero-blitz/commit/f2d20e7eab6c43b1997b6fa533a1b0d3f03fea63
     last_release:
       date: '2025-06-11'
@@ -538,6 +584,8 @@ sections:
   - last_commit:
       author: dominikl
       date: '2025-08-06'
+      sha: 6aa281a7e36782dd3d5508bfe879659b5db953e1
+      status: null
       url: https://github.com/ome/omero-insight/commit/6aa281a7e36782dd3d5508bfe879659b5db953e1
     last_release:
       date: '2024-09-16'
@@ -563,6 +611,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-11-26'
+      sha: 9b806b60b815ac2590daa73f20db1cc207b93cd7
+      status: SUCCESS
       url: https://github.com/ome/omero-py/commit/9b806b60b815ac2590daa73f20db1cc207b93cd7
     last_release:
       date: '2025-11-26'
@@ -587,6 +637,8 @@ sections:
   - last_commit:
       author: knabar
       date: '2025-11-24'
+      sha: 675d57fd7b1eb7bc99ac2c01ed9298ec49bd315b
+      status: SUCCESS
       url: https://github.com/ome/omero-web/commit/675d57fd7b1eb7bc99ac2c01ed9298ec49bd315b
     last_release:
       date: '2024-11-15'
@@ -611,6 +663,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-11-25'
+      sha: ac93ed4b4a139dd73b414ead55223071fc465de5
+      status: SUCCESS
       url: https://github.com/ome/omero-dropbox/commit/ac93ed4b4a139dd73b414ead55223071fc465de5
     name: omero-dropbox
     repo: ome/omero-dropbox
@@ -631,6 +685,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-11-27'
+      sha: eb0e546bbef0d0668bb3a572acf486fd90a0f3fd
+      status: SUCCESS
       url: https://github.com/ome/omero-marshal/commit/eb0e546bbef0d0668bb3a572acf486fd90a0f3fd
     last_release:
       date: '2025-11-27'
@@ -654,6 +710,8 @@ sections:
   - last_commit:
       author: jburel
       date: '2024-12-04'
+      sha: ce6e13cfea3157cab0d00fde40f6cc8158946264
+      status: SUCCESS
       url: https://github.com/ome/omero-cli-render/commit/ce6e13cfea3157cab0d00fde40f6cc8158946264
     name: omero-cli-render
     repo: ome/omero-cli-render
@@ -674,6 +732,8 @@ sections:
   - last_commit:
       author: will-moore
       date: '2025-11-25'
+      sha: 691a9a60c01bcce1f01f90d528584cb6e68124f9
+      status: SUCCESS
       url: https://github.com/ome/omero-figure/commit/691a9a60c01bcce1f01f90d528584cb6e68124f9
     last_release:
       date: '2023-02-10'
@@ -695,6 +755,8 @@ sections:
   - last_commit:
       author: sbesson
       date: '2025-11-26'
+      sha: 0c7356acacce8767f1317bc04057d5ddf059a2db
+      status: SUCCESS
       url: https://github.com/ome/omero-scripts/commit/0c7356acacce8767f1317bc04057d5ddf059a2db
     last_release:
       date: '2025-06-16'
@@ -717,6 +779,8 @@ sections:
   - last_commit:
       author: erickmartins
       date: '2025-11-30'
+      sha: 7d629c06741cc6cbc0d73667c0773e3fb4e181de
+      status: null
       url: https://github.com/TheJacksonLaboratory/ezomero/commit/7d629c06741cc6cbc0d73667c0773e3fb4e181de
     last_release:
       date: '2025-06-30'
@@ -744,6 +808,8 @@ sections:
   - last_commit:
       author: jburel
       date: '2025-05-23'
+      sha: bb94cf8da960e3283090038b04432f301560f5e4
+      status: SUCCESS
       url: https://github.com/ome/omero-iviewer/commit/bb94cf8da960e3283090038b04432f301560f5e4
     name: omero-iviewer
     repo: ome/omero-iviewer
@@ -763,6 +829,8 @@ sections:
   - last_commit:
       author: joshmoore
       date: '2025-09-02'
+      sha: 5463f129fd790b1ca85246f73c12a6f2e7ad4fff
+      status: FAILURE
       url: https://github.com/German-BioImaging/omero-rdf/commit/5463f129fd790b1ca85246f73c12a6f2e7ad4fff
     last_release:
       date: '2025-09-02'
@@ -783,6 +851,8 @@ sections:
   - last_commit:
       author: joshmoore
       date: '2024-05-25'
+      sha: 792ef195dff78a67fc10c2f9dbaf0955842993a5
+      status: null
       url: https://github.com/German-BioImaging/ome-ld/commit/792ef195dff78a67fc10c2f9dbaf0955842993a5
     name: ome-ld
     repo: German-BioImaging/ome-ld
@@ -801,6 +871,8 @@ sections:
   - last_commit:
       author: dependabot[bot]
       date: '2024-12-17'
+      sha: 5a57d6af3cae6b16b1104bf499bb3f6992bd2e8a
+      status: null
       url: https://github.com/ome/omero-guides/commit/5a57d6af3cae6b16b1104bf499bb3f6992bd2e8a
     name: omero-guides
     repo: ome/omero-guides
@@ -822,6 +894,8 @@ sections:
   - last_commit:
       author: joshmoore
       date: '2019-08-22'
+      sha: 9fb1d535d67d52ed47f35a8928f3149266ed2264
+      status: null
       url: https://github.com/ome/status/commit/9fb1d535d67d52ed47f35a8928f3149266ed2264
     name: status
     repo: ome/status
@@ -843,6 +917,8 @@ sections:
   - last_commit:
       author: pwalczysko
       date: '2025-11-18'
+      sha: 680bf1f1c41dffbddfc057efe84e1026017b9c83
+      status: SUCCESS
       url: https://github.com/ome/ansible-role-omero-server/commit/680bf1f1c41dffbddfc057efe84e1026017b9c83
     name: ansible-role-omero-server
     repo: ome/ansible-role-omero-server
@@ -862,6 +938,8 @@ sections:
   - last_commit:
       author: pwalczysko
       date: '2025-11-18'
+      sha: b59eccf9e05ecaed6e2462c9f0b563c7e8dd4d9b
+      status: SUCCESS
       url: https://github.com/ome/ansible-role-omero-web/commit/b59eccf9e05ecaed6e2462c9f0b563c7e8dd4d9b
     name: ansible-role-omero-web
     repo: ome/ansible-role-omero-web
@@ -881,6 +959,8 @@ sections:
   - last_commit:
       author: dependabot[bot]
       date: '2022-08-29'
+      sha: fed83abf48ff5c70a6590c36ba921c4241a3494b
+      status: null
       url: https://github.com/ome/omero-deployment-examples/commit/fed83abf48ff5c70a6590c36ba921c4241a3494b
     name: omero-deployment-examples
     repo: ome/omero-deployment-examples
@@ -902,6 +982,8 @@ sections:
   - last_commit:
       author: pwalczysko
       date: '2025-11-24'
+      sha: 78d37cf650dc1e7401799f99f58c085c2be5d1c4
+      status: SUCCESS
       url: https://github.com/ome/omero-web-docker/commit/78d37cf650dc1e7401799f99f58c085c2be5d1c4
     name: omero-web-docker
     repo: ome/omero-web-docker

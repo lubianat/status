@@ -87,6 +87,29 @@ a:hover {
 
 .commit-date {
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-icon {
+  display: inline-block;
+  margin-left: 0;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 1.1em;
+}
+
+.status-success {
+  color: #1f883d;
+}
+
+.status-failure {
+  color: #d1242f;
+}
+
+.status-pending {
+  color: #9a6700;
 }
 
 .commit-date a {

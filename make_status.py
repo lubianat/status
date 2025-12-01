@@ -44,27 +44,52 @@ def format_date(iso_timestamp: str) -> str:
     )
 
 
-def fetch_last_commit_info(owner: str, repo: str, session: requests.Session) -> dict:
+STATUS_ROLLUP_QUERY = """
+query($owner:String!,$name:String!){
+  repository(owner:$owner,name:$name){
+    defaultBranchRef{
+      target{
+        ... on Commit{
+          oid
+          commitUrl
+          committedDate
+          author{ user{login} name }
+          statusCheckRollup{ state }
+        }
+      }
+    }
+  }
+}
+"""
+
+
+def fetch_last_commit_info(
+    owner: str, repo: str, session: requests.Session
+) -> Optional[dict]:
     """
-    Fetch latest commit from the GitHub API.
+    Fetch latest default-branch commit and its merged checks/status rollup via GraphQL.
     """
-    base_url = f"https://api.github.com/repos/{owner}/{repo}/commits"
-
-    latest_resp = session.get(base_url, params={"per_page": 1})
-    if latest_resp.status_code == 404:
-        return
-
-    commits = latest_resp.json()
-
-    last_commit = commits[0]
-    url = last_commit.get("html_url")
-    author_block = last_commit["commit"]["author"]
-    date = format_date(author_block.get("date"))
-    author = last_commit["author"]["login"]
+    resp = session.post(
+        "https://api.github.com/graphql",
+        json={"query": STATUS_ROLLUP_QUERY, "variables": {"owner": owner, "name": repo}},
+    )
+    if not resp.ok:
+        return None
+    repo_data = (resp.json().get("data") or {}).get("repository") or {}
+    branch_ref = repo_data.get("defaultBranchRef") or {}
+    commit = branch_ref.get("target") or {}
+    if not commit:
+        return None
+    author_block = commit.get("author") or {}
+    author = (author_block.get("user") or {}).get("login") or author_block.get("name")
+    committed_date = commit.get("committedDate")
+    status_rollup = (commit.get("statusCheckRollup") or {}).get("state")
     return {
-        "url": url,
-        "date": date,
+        "url": commit.get("commitUrl"),
+        "date": format_date(committed_date) if committed_date else None,
         "author": author,
+        "status": status_rollup,
+        "sha": commit.get("oid"),
     }
 
 

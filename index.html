@@ -54,6 +54,24 @@
         return span;
       }
 
+      function createStatusIcon(status) {
+        if (!status) return null;
+        const normalized = String(status).toUpperCase();
+        const map = {
+          SUCCESS: { text: '✓', className: 'status-success' },
+          FAILURE: { text: '✗', className: 'status-failure' },
+          ERROR: { text: '✗', className: 'status-failure' },
+          PENDING: { text: '•', className: 'status-pending' },
+        };
+        const match = map[normalized];
+        if (!match) return null;
+        const span = document.createElement('span');
+        span.className = 'status-icon ' + match.className;
+        span.textContent = match.text;
+        span.title = 'Checks: ' + normalized.toLowerCase();
+        return span;
+      }
+
       function normalizeSortValue(rawValue) {
         if (rawValue === undefined || rawValue === null || rawValue === '') {
           return Number.NEGATIVE_INFINITY;
@@ -189,6 +207,7 @@
         if (dateClass) {
           dateDiv.classList.add(dateClass);
         }
+        const statusIcon = commit ? createStatusIcon(commit.status) : null;
         if (commit.url) {
           const link = document.createElement('a');
           link.href = commit.url;
@@ -200,6 +219,9 @@
           dateDiv.appendChild(link);
         } else {
           dateDiv.textContent = formatDateMonth(commit.date) || 'commit';
+        }
+        if (statusIcon) {
+          dateDiv.appendChild(statusIcon);
         }
         const authorDiv = document.createElement('div');
         authorDiv.className = 'commit-actor';
