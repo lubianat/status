@@ -20,6 +20,8 @@
     - repo: fideus-labs/ngff-zarr
     - repo: BioVisionCenter/ngio
     - repo: zarrs/ome_zarr_metadata
+    - repo: ome-zarr-models/ome-zarr-models-py
+    - repo: spatial-image/multiscale-spatial-image
 
 - name: OMERO Java packages
 
@@ -53,6 +55,7 @@
 
   packages:
     - repo: German-BioImaging/omero-rdf
+    - repo: German-BioImaging/ome-ld
 
 - name: Training packages and documentation
 

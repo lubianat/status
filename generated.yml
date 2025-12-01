@@ -1,4 +1,4 @@
-generated_at: '2025-12-01T06:19:54.853660Z'
+generated_at: '2025-12-01T12:04:09.811512Z'
 sections:
 - name: Bio-Formats packages
   packages:
@@ -333,6 +333,57 @@ sections:
       - zarr
       updated_at: '2025-11-25T21:50:21Z'
     user: zarrs
+  - last_commit:
+      author: dstansby
+      date: '2025-10-08'
+      url: https://github.com/ome-zarr-models/ome-zarr-models-py/commit/1ee2c91f1128e2b573e2ad2222ac21b0f4c9f3d3
+    last_release:
+      date: '2025-09-30'
+      tag_name: v1.3
+      url: https://github.com/ome-zarr-models/ome-zarr-models-py/releases/tag/v1.3
+    name: ome-zarr-models-py
+    repo: ome-zarr-models/ome-zarr-models-py
+    repo_info:
+      created_at: '2024-11-20T10:56:54Z'
+      description: A minimal Python package for reading, writing and validating OME-Zarr
+        (meta)data
+      open_issues: 38
+      size: 1904
+      stargazers_count: 36
+      topics:
+      - ngff
+      - ome
+      - ome-zarr
+      - zarr
+      updated_at: '2025-11-13T08:19:16Z'
+    user: ome-zarr-models
+  - last_commit:
+      author: thewtex
+      date: '2025-11-13'
+      url: https://github.com/spatial-image/multiscale-spatial-image/commit/6217a331d3e0897dcb1d857086f68a6ab2a50f72
+    last_release:
+      date: '2025-11-13'
+      tag_name: v2.1.0
+      url: https://github.com/spatial-image/multiscale-spatial-image/releases/tag/v2.1.0
+    name: multiscale-spatial-image
+    repo: spatial-image/multiscale-spatial-image
+    repo_info:
+      created_at: '2021-06-23T17:17:08Z'
+      description: Generate a multiscale, chunked, multi-dimensional spatial image
+        data structure that can serialized to OME-NGFF.
+      open_issues: 19
+      size: 3046
+      stargazers_count: 54
+      topics:
+      - imaging
+      - multiscale
+      - ngff
+      - ome-zarr-converter
+      - python
+      - scientific-computing
+      - xarray
+      updated_at: '2025-11-13T15:26:36Z'
+    user: spatial-image
 - name: OMERO Java packages
   packages:
   - last_commit:
@@ -729,6 +780,22 @@ sections:
       - nfdi4bioimage
       updated_at: '2025-10-24T07:07:09Z'
     user: German-BioImaging
+  - last_commit:
+      author: joshmoore
+      date: '2024-05-25'
+      url: https://github.com/German-BioImaging/ome-ld/commit/792ef195dff78a67fc10c2f9dbaf0955842993a5
+    name: ome-ld
+    repo: German-BioImaging/ome-ld
+    repo_info:
+      created_at: '2024-04-16T07:59:07Z'
+      description: Linked Data support for the OME Model
+      open_issues: 7
+      size: 40
+      stargazers_count: 3
+      topics:
+      - nfdi4bioimage
+      updated_at: '2025-12-01T08:12:01Z'
+    user: German-BioImaging
 - name: Training packages and documentation
   packages:
   - last_commit:
@@ -820,7 +887,7 @@ sections:
     repo_info:
       created_at: '2017-08-16T13:53:30Z'
       description: Examples playbooks for installing OMERO with Ansible and Docker
-      open_issues: 6
+      open_issues: 5
       size: 351
       stargazers_count: 11
       topics:
