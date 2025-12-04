@@ -1,6 +1,9 @@
 name: Update Status Dashboard
 
 on:
+  push:
+    branches:
+      - master
   workflow_dispatch:
   schedule:
     - cron: "0 6 * * *" # daily at 06:00 UTC
