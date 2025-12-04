@@ -1,4 +1,4 @@
-generated_at: '2025-12-04T12:47:03.278038Z'
+generated_at: '2025-12-04T13:01:48.248197Z'
 sections:
 - name: Bio-Formats packages
   packages:
@@ -504,7 +504,10 @@ sections:
       - util
       updated_at: '2025-06-04T08:53:33Z'
     user: ome
-  - last_commit:
+  - disabled_workflows:
+    - CodeQL Advanced
+    - Gradle
+    last_commit:
       author: sbesson
       date: '2025-08-06'
       sha: 33c24b311d5b4cb8cd8f64af7e509636c4bdb433
@@ -529,7 +532,10 @@ sections:
       - omero
       updated_at: '2025-08-06T08:36:33Z'
     user: ome
-  - last_commit:
+  - disabled_workflows:
+    - CodeQL Advanced
+    - Gradle
+    last_commit:
       author: sbesson
       date: '2025-06-10'
       sha: e594cc1fccbdaffe1c51566d8c5b1d4d4da49d69
@@ -813,6 +819,10 @@ sections:
       sha: 5e2de43ad401fb00690a79644056e0ac15fabfd5
       status: SUCCESS
       url: https://github.com/ome/omero-iviewer/commit/5e2de43ad401fb00690a79644056e0ac15fabfd5
+    last_release:
+      date: '2025-12-04'
+      tag_name: v0.16.0
+      url: https://github.com/ome/omero-iviewer/releases/tag/v0.16.0
     name: omero-iviewer
     repo: ome/omero-iviewer
     repo_info:
@@ -841,7 +851,7 @@ sections:
     repo_info:
       created_at: '2013-09-29T22:16:03Z'
       description: An OMERO.web app for creating Figures from images in OMERO
-      open_issues: 77
+      open_issues: 78
       size: 8879
       stargazers_count: 19
       topics:
@@ -849,7 +859,9 @@ sections:
       - webapp
       updated_at: '2025-11-25T11:20:35Z'
     user: ome
-  - last_commit:
+  - disabled_workflows:
+    - PyPI
+    last_commit:
       author: Tom-TBT
       date: '2025-10-02'
       sha: 4d74ba8e59ac201be6400fa4935650e60c898e80
@@ -871,7 +883,9 @@ sections:
       - omero-web
       updated_at: '2025-10-02T07:27:14Z'
     user: German-BioImaging
-  - last_commit:
+  - disabled_workflows:
+    - PyPI
+    last_commit:
       author: Tom-TBT
       date: '2025-05-07'
       sha: 0b3e8cbcb40e1bcce7f35793b71a12a8f906de2f
@@ -962,25 +976,25 @@ sections:
       updated_at: '2024-12-17T13:42:35Z'
     user: ome
   - last_commit:
-      author: jburel
+      author: github-actions[bot]
       date: '2025-12-04'
-      sha: 95f4fe6b34717532294e9a57887d4c761107d9f2
-      status: PENDING
-      url: https://github.com/ome/status/commit/95f4fe6b34717532294e9a57887d4c761107d9f2
+      sha: 95d511308b43a8af0833ff5d716f41d6965c78d3
+      status: SUCCESS
+      url: https://github.com/ome/status/commit/95d511308b43a8af0833ff5d716f41d6965c78d3
     name: status
     repo: ome/status
     repo_info:
       created_at: '2019-08-22T12:20:48Z'
       description: Status dashboard for the OME project
       open_issues: 0
-      size: 250
+      size: 262
       stargazers_count: 1
       topics:
       - dashboard
       - gh-pages
       - ome
       - status
-      updated_at: '2025-12-04T12:46:44Z'
+      updated_at: '2025-12-04T12:47:07Z'
     user: ome
 - name: Ansible, Docker and examples
   packages:
