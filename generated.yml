@@ -1,4 +1,4 @@
-generated_at: '2025-12-04T13:24:23.778070Z'
+generated_at: '2025-12-05T06:34:30.425709Z'
 sections:
 - name: Bio-Formats packages
   packages:
@@ -20,7 +20,7 @@ sections:
         life sciences image file formats. It is developed by the  Open Microscopy
         Environment. Bio-Formats is released under the  GNU General Public License
         (GPL); commercial licenses are available from  Glencoe Software. '
-      open_issues: 173
+      open_issues: 174
       size: 280215
       stargazers_count: 407
       topics:
@@ -76,7 +76,7 @@ sections:
       created_at: '2020-11-17T14:55:39Z'
       description: Next-generation file format (NGFF) specifications for storing bioimaging
         data in the cloud.
-      open_issues: 139
+      open_issues: 140
       size: 14215
       stargazers_count: 145
       topics:
@@ -145,7 +145,7 @@ sections:
       created_at: '2020-05-06T09:40:59Z'
       description: Implementation of next-generation file format (NGFF) specifications
         for storing bioimaging data in the cloud.
-      open_issues: 87
+      open_issues: 86
       size: 1057
       stargazers_count: 217
       topics:
@@ -330,12 +330,12 @@ sections:
       description: Ngio is a Python library to streamline OME-Zarr image analysis
         workflows.
       open_issues: 9
-      size: 40493
-      stargazers_count: 32
+      size: 40536
+      stargazers_count: 34
       topics:
       - ome-ngff
       - ome-zarr
-      updated_at: '2025-11-27T09:42:30Z'
+      updated_at: '2025-12-04T20:45:28Z'
     user: BioVisionCenter
   - last_commit:
       author: LDeakin
@@ -713,12 +713,16 @@ sections:
       sha: ce6e13cfea3157cab0d00fde40f6cc8158946264
       status: SUCCESS
       url: https://github.com/ome/omero-cli-render/commit/ce6e13cfea3157cab0d00fde40f6cc8158946264
+    last_release:
+      date: '2025-12-04'
+      tag_name: v0.8.1
+      url: https://github.com/ome/omero-cli-render/releases/tag/v0.8.1
     name: omero-cli-render
     repo: ome/omero-cli-render
     repo_info:
       created_at: '2017-08-15T10:45:26Z'
       description: OMERO command-line tool for rendering
-      open_issues: 12
+      open_issues: 13
       size: 429
       stargazers_count: 2
       topics:
@@ -853,14 +857,12 @@ sections:
       - webapp
       updated_at: '2025-11-25T11:20:35Z'
     user: ome
-  - disabled_workflows:
-    - PyPI
-    last_commit:
+  - last_commit:
       author: Tom-TBT
-      date: '2025-10-02'
-      sha: 4d74ba8e59ac201be6400fa4935650e60c898e80
-      status: null
-      url: https://github.com/German-BioImaging/omero-autotag/commit/4d74ba8e59ac201be6400fa4935650e60c898e80
+      date: '2025-12-04'
+      sha: d8259ba596ef6bb0507e94180bfa63c9336d04e4
+      status: SUCCESS
+      url: https://github.com/German-BioImaging/omero-autotag/commit/d8259ba596ef6bb0507e94180bfa63c9336d04e4
     last_release:
       date: '2025-01-24'
       tag_name: v4.1.0
@@ -870,21 +872,19 @@ sections:
     repo_info:
       created_at: '2023-06-27T13:49:38Z'
       description: Extensions to OMERO.web to enhance tagging
-      open_issues: 9
-      size: 1073
+      open_issues: 10
+      size: 1076
       stargazers_count: 0
       topics:
       - omero-web
-      updated_at: '2025-10-02T07:27:14Z'
+      updated_at: '2025-12-04T14:06:49Z'
     user: German-BioImaging
-  - disabled_workflows:
-    - PyPI
-    last_commit:
+  - last_commit:
       author: Tom-TBT
-      date: '2025-05-07'
-      sha: 0b3e8cbcb40e1bcce7f35793b71a12a8f906de2f
+      date: '2025-12-04'
+      sha: 427b91de1dec2010220c556a533e2c25f5520719
       status: SUCCESS
-      url: https://github.com/German-BioImaging/omero-tagsearch/commit/0b3e8cbcb40e1bcce7f35793b71a12a8f906de2f
+      url: https://github.com/German-BioImaging/omero-tagsearch/commit/427b91de1dec2010220c556a533e2c25f5520719
     last_release:
       date: '2025-01-24'
       tag_name: v4.3.0
@@ -895,12 +895,12 @@ sections:
       created_at: '2023-06-27T14:35:18Z'
       description: Extensions to OMERO.web to enhance image/dataset/project filtering
         from tags.
-      open_issues: 6
-      size: 199
+      open_issues: 7
+      size: 200
       stargazers_count: 0
       topics:
       - omero-web
-      updated_at: '2025-05-07T12:46:14Z'
+      updated_at: '2025-12-04T14:07:14Z'
     user: German-BioImaging
 - name: OME Linked Data
   packages:
@@ -970,25 +970,25 @@ sections:
       updated_at: '2024-12-17T13:42:35Z'
     user: ome
   - last_commit:
-      author: jburel
+      author: github-actions[bot]
       date: '2025-12-04'
-      sha: 8fa9dcc981903ce6a766dc4d5266038df76a0773
-      status: PENDING
-      url: https://github.com/ome/status/commit/8fa9dcc981903ce6a766dc4d5266038df76a0773
+      sha: 96e1c78d813fda8b97eda405a6f0fa704370dbe7
+      status: SUCCESS
+      url: https://github.com/ome/status/commit/96e1c78d813fda8b97eda405a6f0fa704370dbe7
     name: status
     repo: ome/status
     repo_info:
       created_at: '2019-08-22T12:20:48Z'
       description: Status dashboard for the OME project
       open_issues: 0
-      size: 262
+      size: 268
       stargazers_count: 1
       topics:
       - dashboard
       - gh-pages
       - ome
       - status
-      updated_at: '2025-12-04T13:24:07Z'
+      updated_at: '2025-12-04T13:24:28Z'
     user: ome
 - name: Ansible, Docker and examples
   packages:
