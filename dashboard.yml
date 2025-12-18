@@ -69,9 +69,10 @@
 - name: Ansible, Docker and examples
 
   packages:
+    - repo: ome/prod-playbooks
     - repo: ome/ansible-role-omero-server
     - repo: ome/ansible-role-omero-web
-    - repo: ome/omero-deployment-examples
+    - repo: ome/docker-example-omero
     - repo: ome/omero-web-docker
     - repo: ome/omero-server-docker
 
